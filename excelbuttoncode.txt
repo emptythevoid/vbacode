@@ -1,0 +1,15 @@
+'Makes Button1 form control toggle the username of logged in user into specified cell
+Sub Button1_Click()
+
+'Change the Range to whichever cell you need to toggle
+'This does not work for cells that have been merged
+If Not IsEmpty(Range("P27").Value) Then
+  Range("P27").ClearContents
+Exit Sub
+
+ElseIf IsEmpty(Range"P27").Value Then
+  username = Environ$("UserName")
+  Range("P27").Value = username
+End If
+
+End Sub

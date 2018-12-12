@@ -1,0 +1,6 @@
+'This code allows the form button to run macros on protected cells
+Private Sub Workbook_Open()
+'Change xxx to whatever password you used to protect the worksheet
+  ActiveSheet.Protect Password:="xxx", DrawingObjects:=False, Contents:=True, Scenarios:=True, UserInterfaceOnly:=True
+  ActiveSheet.EnableSelection = xlNoRestrictions
+End Sub
