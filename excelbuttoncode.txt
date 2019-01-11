@@ -7,7 +7,7 @@ If Not IsEmpty(Range("P27").Value) Then
   Range("P27").ClearContents
 Exit Sub
 
-ElseIf IsEmpty(Range"P27").Value Then
+ElseIf IsEmpty(Range("P27").Value) Then
   username = Environ$("UserName")
   Range("P27").Value = username
 End If
